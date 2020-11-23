@@ -1,0 +1,106 @@
+body {
+    text-align: center;
+    background:linear-gradient(rgb(39, 39, 39),rgb(143, 31, 31), rgb(39, 39, 39));
+    
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    color: rgb(231, 236, 231);
+    
+}
+.contanier{
+    display: flex;
+    justify-content: space-evenly;
+    background:linear-gradient(rgb(0, 0, 0),rgb(117, 114, 114), rgb(0, 0, 0));
+    padding: 80px 20px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+    
+}
+
+#vezDe{
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+#jogadorVez{
+    background-color: rgb(24, 233, 24);
+    padding-left: 5px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background:linear-gradient(rgb(143, 31, 31), rgb(39, 39, 39));
+    border:2px solid black;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 2px grey;
+    
+}
+
+.square:hover{
+    background:rgba(68, 65, 65, 0.918);
+}
+
+#players{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(rgb(39, 39, 39),rgb(143, 31, 31), rgb(39, 39, 39));
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px 2px grey;
+    
+}
+
+.o {
+    position: relative;
+}
+
+.o::after {
+    content: "\274C";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x::after {
+    content: "\2B55";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+}
+
+
+
+@media(max-width: 410px) {
+    .square {
+        width: 60px;
+        height: 60px;
+    }
+    .o::after { 
+    font-size: 30px;
+    line-height: 60px;
+    }
+    .x::after { 
+    font-size: 30px;
+    line-height: 60px;
+    }
+}
